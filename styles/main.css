@@ -55,13 +55,16 @@ body {
 header,
 footer {
   background: red;
-  height: 5vh;
+  height: 10vh;
   color: white;
+  font-size: 300%;
+  padding: 0.3em;
 }
-header,
+
 footer,
 article,
 nav,
 aside {
   padding: 1em;
+  font-size: 130%;
 }
