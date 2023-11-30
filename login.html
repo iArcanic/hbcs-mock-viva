@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Rentals</title>
     <link href="/styles/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,8 +21,8 @@
     <div id="main">
       <article>
         <h1 style="text-align: center">Welcome to Movie Rentals!</h1>
-        <div style="background-color: lightgrey; width: 40%; margin: auto; padding: 1em">
-          <form method="GET" action="/shop.html">
+        <div style="background-color: lightgrey; max-width: 35%; min-width: 20%; margin:auto; padding: 1em; align-items: center; display: flex; flex-direction: column;">
+          <form method="GET" action="/shop.html" style="width: 100%">
             <label>Email</label><br />
             <input type="text" name="email" style="width: 100%" />
             <br />
@@ -30,10 +31,14 @@
             <input type="password" name="password" style="width: 100%" />
             <br />
             <br />
-            <div style="width: 100%; text-align: center">
-              <button type="submit" name="action" value="login" style="width: 45%">Sign In</button>
-              <button type="submit" name="action" value="login" style="width: 45%">Sign Up</button>
-            </div>
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+            <button type="submit" name="action" value="login" style="width: 48%; font-size: 1.2em;">
+                <i class="fas fa-sign-in-alt"></i> Sign In
+            </button>
+            <button type="submit" name="action" value="signup" style="width: 48%; font-size: 1.2em;">
+                <i class="fas fa-user-plus"></i> Sign Up
+            </button>
+          </div>
           </form>
         </div>
       </article>
