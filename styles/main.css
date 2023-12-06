@@ -37,6 +37,28 @@ body {
   flex-direction: column;
   margin: 0;
 }
+button {
+  display: inline-block;
+  width: 48%; font-size: 1.2em;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+nav strong {
+  font-size: 200%;
+}
+button {
+  display: inline-block;
+  width: 48%; font-size: 1.2em;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+nav strong {
+  font-size: 200%;
+}
 #main {
   display: flex;
   flex: 1;
@@ -60,11 +82,33 @@ footer {
   font-size: 300%;
   padding: 0.3em;
 }
-
+article > h1 {
+  font-size: 200%;
+}
 footer,
 article,
 nav,
 aside {
   padding: 1em;
   font-size: 130%;
+}
+.movie-details {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.movie-details th, .movie-details td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+.movie-details th {
+  background-color: #f2f2f2;
+}
+#movie-image {
+  width: 350px;
+  height: 250px;
+  float: right;
+  margin-top: 5%;
+  margin-right: 15%;
 }
